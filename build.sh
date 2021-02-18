@@ -159,7 +159,7 @@ export ZIP_FILENAME="${ZIP_FILENAME:-"image_${IMG_NAME}"}"
 export SCRIPT_DIR="${BASE_DIR}/scripts"
 export WORK_DIR="${WORK_DIR:-"${BASE_DIR}/work/${IMG_NAME}"}"
 export DEPLOY_DIR=${DEPLOY_DIR:-"${BASE_DIR}/deploy"}
-export DEPLOY_ZIP="${DEPLOY_ZIP:-1}"
+export DEPLOY_ZIP="${DEPLOY_ZIP:--1}"
 export LOG_FILE="${WORK_DIR}/build.log"
 
 export TARGET_HOSTNAME=${TARGET_HOSTNAME:-raspberrypi}
