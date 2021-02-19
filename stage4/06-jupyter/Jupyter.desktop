@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Jupyter Notebooks
+Name=Jupyter Browser
 Comment=Made by OHIO
 Icon=/usr/share/pixmaps/openbox.xpm
-Exec=/usr/bin/chromium-browser localhost:8888
+Exec=/usr/bin/chromium-browser http://127.0.0.1:8888
 Type=Application
 Encoding=UTF-8
 Terminal=false
