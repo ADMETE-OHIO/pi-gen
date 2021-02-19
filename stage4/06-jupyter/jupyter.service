@@ -9,7 +9,7 @@ Restart=always
 RestartSec=1
 User=pi
 ExecStart=/usr/bin/jupyter notebook --ip=0.0.0.0 --NotebookApp.token='' 
-WorkingDirectory=/home/pi/Notebooks
+WorkingDirectory=/home/pi/Desktop/Notebooks
 
 [Install]
 WantedBy=multi-user.target

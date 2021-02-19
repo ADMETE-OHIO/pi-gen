@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Jupyter Notebooks
+Comment=Made by OHIO
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=/usr/bin/chromium-browser localhost:8888
+Type=Application
+Encoding=UTF-8
+Terminal=false
+
