@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/"
 # install -m 644 one-time-pad.ipynb "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/one-time-pad.ipynb"
@@ -15,4 +15,10 @@ cp ohio.jpg "${ROOTFS_DIR}/usr/share/rpd-wallpaper/temple.jpg"
 
 rm "${ROOTFS_DIR}/etc/xdg/autostart/piwiz.desktop"
 
-# ln -sv "/lib/systemd/system/apply_noobs_os_config.service" "$ROOTFS_DIR/etc/systemd/system/multi-user.target.wants/apply_noobs_os_config.service"
+cp jupyter.service "${ROOTFS_DIR}/lib/systemd/system/jupyter.service"
+ln -sv "${ROOTFS_DIR}/lib/systemd/system/jupyter.service" "$ROOTFS_DIR/etc/systemd/system/multi-user.target.wants/jupyter.service"
+
+on_chroot << EOF
+pip3 install --upgrade matplotlib
+pip3 install --upgrade pillow
+EOF
