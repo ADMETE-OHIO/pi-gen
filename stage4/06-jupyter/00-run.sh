@@ -30,3 +30,5 @@ pip3 install --upgrade blinkt
 EOF
 
 install -v -m 644 "libfm.conf" "${ROOTFS_DIR}/etc/xdg/libfm/libfm.conf"
+
+cp -rfv blinkt-examples "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop"
