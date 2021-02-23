@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Russ College Webpage
+Comment=Made by OHIO
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=/usr/bin/chromium-browser https://www.ohio.edu/engineering/
+Type=Application
+Encoding=UTF-8
+Terminal=false
+
+Name[en_US]=Russ-College.desktop

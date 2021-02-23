@@ -9,6 +9,8 @@ install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/Not
 cp -fv files/* "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/Notebooks/"
 
 install -v -o 1000 -g 1000 -m 755 "Jupyter.desktop" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/Jupyter.desktop"
+install -v -o 1000 -g 1000 -m 755 "OHIO-EECS.desktop" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/OHIO-EECS.desktop"
+install -v -o 1000 -g 1000 -m 755 "Russ-College.desktop" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/Russ-College.desktop"
 
 install -v -o 1000 -g 1000 -m 644 "ohio.jpg" "${ROOTFS_DIR}/usr/share/rpd-wallpaper/temple.jpg"
 
