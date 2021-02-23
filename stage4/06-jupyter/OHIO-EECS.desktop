@@ -6,5 +6,3 @@ Exec=/usr/bin/chromium-browser https://www.ohio.edu/engineering/eecs
 Type=Application
 Encoding=UTF-8
 Terminal=false
-
-Name[en_US]=OHIO-EECS.desktop
