@@ -27,6 +27,8 @@ on_chroot << EOF
 pip3 install --upgrade matplotlib
 pip3 install --upgrade pillow
 pip3 install --upgrade blinkt
+pip3 install --upgrade BitVector
+
 EOF
 
 install -v -m 644 "libfm.conf" "${ROOTFS_DIR}/etc/xdg/libfm/libfm.conf"
