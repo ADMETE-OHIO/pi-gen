@@ -1,0 +1,4 @@
+BitVector
+matplotlib
+pillow
+
